@@ -1,0 +1,40 @@
+SILENCE = @
+
+# Dynamically generate absolute paths
+MAKEFILE_DIR = $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
+PROJECT_DIR = $(realpath $(MAKEFILE_DIR)../../)
+TEST_DIR = $(PROJECT_DIR)/unit-tests
+
+$(info $(PROJECT_DIR))
+
+# Location of CppUTest
+CPPUTEST_HOME ?= ../../../cpputest
+
+# Store the build artifacts in a sub-directory to avoid polluting the root
+# of each component
+CPPUTEST_OBJS_DIR = ./output/objects
+CPPUTEST_LIB_DIR = ./output/lib
+
+# Colourise output
+CPPUTEST_EXE_FLAGS += -c
+
+# The name of the executable that CppuTest builds
+# Keep it constant for each component to simplify the work of all scripts
+TEST_TARGET = test-executer
+
+# Generate junit xml test reports - this is a CppuTest option
+# CPPUTEST_EXE_FLAGS = -ojunit
+# Output GCC messages in json format
+# https://gcc.gnu.org/onlinedocs/gcc/Diagnostic-Message-Formatting-Options.html#index-fdiagnostics-format
+# CPPUTEST_CXXFLAGS += -fdiagnostics-format=json
+
+# Includes CppUTest header files
+INCLUDE_DIRS = $(CPPUTEST_HOME)/include
+
+# Required for CppuMock
+CPPUTEST_USE_EXTENSIONS = Y
+
+# Directories containing the unit tests
+TEST_SRC_DIRS = $(TEST_DIR)/$(COMPONENT_NAME)
+
+include $(PROJECT_DIR)/unit-test-executor/compiler-flags
