@@ -3,7 +3,7 @@
 Unit tests are run as components.
 Each component has its own directory in the *unit-tests/* folder.
 The directory must contain a *main.cpp* file with the following contents:
-```
+```cpp
 #include "CppUTest/CommandLineTestRunner.h"
 
 int main(int ac, char ** av)
@@ -23,7 +23,7 @@ match the name of the test component's directory,  the line *include ../../unit-
 
 
 An example __Makefile__ is shown below.
-```
+```make
 # Name of component under test - required
 COMPONENT_NAME = myComponent
 

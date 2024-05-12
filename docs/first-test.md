@@ -1,9 +1,9 @@
 # Run your First Test
 
-These instructions assume you have already [installed](../readme.md) Flubber.
+These instructions assume you have already [installed Flubber](../readme.md#installation).
 All commands are run from your project's root directory.
 
-1. Create a new component
+1. Create a new component.
     ````
     flubber/scripts/main.sh new-component --name=myComponent
     ````
@@ -15,7 +15,7 @@ All commands are run from your project's root directory.
     directories if they do not exist, and a file called *forced_include.hpp* which
     is included in all test code.
 
-2. Run the tests for the new component.\
+2. Run the tests for the new component.
    ````
    flubber/scripts/main.sh run --components=myComponent
    ````
