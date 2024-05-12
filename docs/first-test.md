@@ -1,6 +1,6 @@
 # Run your First Test
 
-These instructions assume you have already [installed Flubber](../readme.md#installation).
+These instructions assume you have already [installed Flubber](../readme.md#Installation).
 All commands are run from your project's root directory.
 
 1. Create a new component.

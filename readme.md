@@ -24,7 +24,7 @@ Flubber's structure provides flexibility for those who want or need more control
 * [Podman](https://podman.io/)
 
 ## Installation
-1. Install the tools listed in the Requirements section.
+1. Install the tools listed in the [Requirements](#Requirements) section.
 2. Add this repository into the root of your project as a submodule.\
 From your project's root:
     ````console
@@ -39,12 +39,12 @@ From your project's root:
 4. Build the Podman image.\
     From `<project-root>/flubber/`:
     ````console
-    podman build -t unit-tests -f Dockerfile .
+    podman build -t unit-tests -f dockerfile .
     `````
 
 That's it!
 The next step is to [run your first test](./docs/first-test.md).
 
 ## What's With the Name?
-Flubber is named after Ned Brainard’s invention from the movie The Absent Minded Professor.
-I watched the remake when I was a child, and for some reason it stuck.
+Flubber is named after Ned Brainard's invention from the movie [The Absent Minded Professor](https://en.wikipedia.org/wiki/The_Absent-Minded_Professor).
+I watched the [remake](https://en.wikipedia.org/wiki/Flubber_(film)) when I was a child, and for some reason it stuck.
