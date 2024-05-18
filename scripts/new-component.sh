@@ -15,8 +15,8 @@ mkdir -p ../unit-tests/mocks/include
 touch ../unit-tests/forced_include.hpp
 
 mkdir -p $component_dir
-cp ../unit-test-executor/templates/main.cpp $component_dir/main.cpp
-cp ../unit-test-executor/templates/Makefile $component_dir/Makefile
-cp ../unit-test-executor/templates/tests.cpp $component_dir/tests.cpp
+cp ../flubber/templates/main.cpp $component_dir/main.cpp
+cp ../flubber/templates/Makefile $component_dir/Makefile
+cp ../flubber/templates/tests.cpp $component_dir/tests.cpp
 
 sed -i "s/component-name/$component/" $component_dir/Makefile

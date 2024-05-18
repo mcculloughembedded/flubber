@@ -91,7 +91,7 @@ def run(components: Annotated[
         confirm_existence_of_source_files(component)
 
         sys.stdout.flush()
-        subprocess.run(['../unit-test-executor/scripts/run.sh', component])
+        subprocess.run(['../flubber/scripts/run.sh', component])
 
         # printCompilerOutput(component)
         # generateReport(component)
@@ -123,7 +123,7 @@ def new_component(name: Annotated[
     Use --name= to specify the name
     """
     sys.stdout.flush()
-    subprocess.run(['../unit-test-executor/scripts/new-component.sh', name[0]])
+    subprocess.run(['../flubber/scripts/new-component.sh', name[0]])
 
 
 if __name__ == "__main__":

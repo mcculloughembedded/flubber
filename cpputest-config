@@ -37,4 +37,4 @@ CPPUTEST_USE_EXTENSIONS = Y
 # Directories containing the unit tests
 TEST_SRC_DIRS = $(TEST_DIR)/$(COMPONENT_NAME)
 
-include $(PROJECT_DIR)/unit-test-executor/compiler-flags
+include $(PROJECT_DIR)/flubber/compiler-flags

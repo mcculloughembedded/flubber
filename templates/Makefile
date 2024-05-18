@@ -1,7 +1,7 @@
 # Name of component under test
 COMPONENT_NAME = component-name
 
-include ../../unit-test-executor/cpputest-config
+include ../../flubber/cpputest-config
 
 # Includes (.hpp) for this component
 INCLUDE_DIRS += \
