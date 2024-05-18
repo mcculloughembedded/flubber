@@ -13,6 +13,7 @@ Flubber does this by introducing the concept of [Test Components](./docs/test-co
 * [Installation](#Installation)
 * [Run Your First Test](./docs/first-test.md)
 * [Test Components](./docs/test-components.md)
+* [Mocking Support](./docs/mocking-support.md)
 * [Command Reference](./docs/command-reference.md)
 * [Compiler Flags](./docs/compiler-flags.md)
 

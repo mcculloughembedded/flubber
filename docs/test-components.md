@@ -7,9 +7,9 @@ Test components make it easy to compile selected parts of the production code.
 This is in line with the theme of Test Driven Development.
 Tests should be isolated and fast to build and execute.
 
-Components can be named anything except for mocks, scripts, compiler_flags, cpputest_config, Dockerfile, Makefile and readme.md.
+Components can be named anything except for _mocks_, _scripts_, _compiler_flags_, _cpputest_config_, _dockerfile_, and _Makefile_.
 
-The [new component command]() should be used to initialise a test component.
+The [new component command](/command-reference#create-a-new-component) should be used to initialise a test component.
 
 # Structure of a Test Component
 A test component manifests itself as a folder in the `/unit-tests` directory.
@@ -46,6 +46,7 @@ In general, it should only be necessary to edit the `INCLUDE_DIRS` and `SRC_FILE
 
 Tests are written in `.cpp` files in the test component's directory.
 There can be any number of test source files.
+Flubber automatically compiles all the test files.
 
 The most basic test file supporting mocking looks like this:
 ```
@@ -81,6 +82,7 @@ The directory for a test component with the name 'my-component' looks like this,
    ├── .
    └── tests_n.cpp
 ```
+
 
 ## Mocks
 The *mocks* directory is reserved for mock source files.
