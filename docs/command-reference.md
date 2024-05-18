@@ -9,7 +9,7 @@ flubber/scripts/main.sh new-component=<component-name>
 
 ## Build image
 ```
-podman build -t unit-tests -f Dockerfile .
+podman build -t unit-tests -f dockerfile .
 ```
 
 ## Run tests for all components
