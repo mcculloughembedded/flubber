@@ -82,15 +82,3 @@ The directory for a test component with the name 'my-component' looks like this,
    ├── .
    └── tests_n.cpp
 ```
-
-
-## Mocks
-The *mocks* directory is reserved for mock source files.
-Files in the *mocks* directory are not implicity compiled.
-
-To compile a mock, include it in the *Makefile* of the test component for which
-the mock is required.
-
-## Forced Include
-A file named *forced_include.hpp* must be present in the *unit-tests/* directory.
-This file in included in all tests.
