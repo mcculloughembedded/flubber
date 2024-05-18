@@ -5,10 +5,10 @@ All commands are run from your project's root directory.
 
 1. Create a new component.
     ````
-    flubber/scripts/main.sh new-component --name=myComponent
+    flubber/scripts/main.sh new-component --name=my-component
     ````
 
-    This will create a directory `unit-tests/myComponent` with the minimum files
+    This will create a directory `unit-tests/my-component` with the minimum files
     required to write and run tests.
 
     This script also creates the `unit-tests/mocks/source` and `unit-tests/mocks/include`
@@ -17,14 +17,14 @@ All commands are run from your project's root directory.
 
 2. Run the tests for the new component.
    ````
-   flubber/scripts/main.sh run --components=myComponent
+   flubber/scripts/main.sh run --components=my-component
    ````
     You should see the following output in your terminal:
 
     ![first-test](./first-test.png)
 
 The template test belongs to the *example* test group and is called *your_first_test*.
-The test code is in the file `unit-tests/myComponent/tests.cpp`.
+The test code is in the file `unit-tests/my-component/tests.cpp`.
 
 ```cpp
 #include "CppUTest/TestHarness.h"
