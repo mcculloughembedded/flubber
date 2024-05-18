@@ -47,4 +47,4 @@ TEST(example, your_first_test)
 }
 ```
 
-For a more detailed explanation see [Test Components](./test-components.md)
+For a more detailed explanation see [Test Components](./test-components.md).
