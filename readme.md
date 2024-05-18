@@ -1,10 +1,12 @@
 # Flubber
 
-Flubber is a command line interface (CLI) that implements a number of helper functions for setting up and executing [CppUTest](https://cpputest.github.io/) tests.
+Flubber is a command line interface (CLI) that implements a set of helper functions for setting up and executing [CppUTest](https://cpputest.github.io/) tests.
 Flubber aims to be easy to use and extensible.
 
 Most users should be able to jump right in and focus on their tests.
 Flubber's structure provides flexibility for those who want or need more control.
+
+Flubber does this by introducing the concept of [Test Components](./docs/test-components.md).
 
 # Table of Contents
 * [Requirements](#Requirements)
